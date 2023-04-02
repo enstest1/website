@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cowboy Joe</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>    
+    
+    <div class="wrapper">
+        <h1 data-text="Cowboy">Cowboy</h1>
+        <h2 data-text="Joe">Joe</h2>
+    </div>
+
+    <div class="icon-container">
+        <a href="https://twitter.com/pelpa333" target="_blank">
+            <img src="images/twittericon.png" alt="Twitter" class="icon twitter-icon">
+        </a>
+        <a href="https://opensea.io" target="_blank">
+            <img src="images/openseaicon.png" alt="Opensea" class="icon opensea-icon">
+        </a>
+        <a href="https://discord.com" target="_blank">
+            <img src="images/discordicon1.png" alt="Discord" class="icon discord-icon">
+        </a>
+    </div>
+
+
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/bg.svg" alt="background">
+   
+    <div class="graph-container">
+        <div class="graph"></div>
+    </div>
+
+    <div class="iframe-container">
+        <iframe src="https://ipfs.thirdwebcdn.com/ipfs/QmbAgC8YwY36n8H2kuvSWsRisxDZ15QZw3xGZyk9aDvcv7/erc721.html?contract=0xaCB78118c12f63B1dAebd74bfeBA526350E4FfBb&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%7D" width="600px" height="600px" style="max-width:100%;" frameborder="0"></iframe>
+    </div> 
+
+    <audio src="audio/theme.mp3" controls></audio>
+
+
+    <script>
+        window.addEventListener("scroll", function() {
+            var bg = document.querySelector("img");
+            var graph = document.querySelector(".graph-container");
+            bg.style.top = -(window.pageYOffset / 5) + "px";
+            graph.style.transform = "translateY(" + window.pageYOffset / 2 + "px)";
+        });
+    </script>
+
+
+</body>
+</html>
